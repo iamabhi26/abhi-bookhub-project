@@ -1,0 +1,149 @@
+.login-page {
+  position: relative;
+  width: 100vw;
+  padding: 30px 20px 40px 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.login-website-logo {
+  display: none;
+}
+
+.login-website-mobile-logo {
+  width: 216px;
+  height: 216px;
+  margin-bottom: 30px;
+}
+
+.website-login {
+  width: 104px;
+  height: 28px;
+  margin-left: 90px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  height: 90px;
+  margin-top: 15px;
+}
+
+.label-name {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+}
+
+.input {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  width: 312px;
+  height: 40px;
+  margin-top: 8px;
+  outline: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Inter';
+  padding: 18px 20px 19px 20px;
+}
+
+.login-button {
+  width: 312px;
+  height: 40px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.error-message {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+  align-self: left;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page {
+    width: 1440px;
+    height: 1024px;
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .login-website-logo {
+    display: flex;
+    width: 780px;
+    height: 1024px;
+    position: absolute;
+  }
+
+  .login-website-mobile-logo {
+    display: none;
+  }
+
+  .login-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    position: absolute;
+    width: 499px;
+    height: 484px;
+    left: 852px;
+    top: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+  }
+
+  .website-login {
+    width: 141px;
+    height: 48px;
+    margin-bottom: 55px;
+    margin-left: 0px;
+  }
+
+  .input-container {
+    width: 360px;
+    height: 90px;
+  }
+
+  .input {
+    width: 360px;
+    height: 45px;
+  }
+
+  .login-button {
+    width: 360px;
+    height: 45px;
+  }
+}

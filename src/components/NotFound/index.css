@@ -1,0 +1,66 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.not-found-image {
+  width: 225px;
+  height: 151px;
+}
+
+.not-found-heading {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #334155;
+}
+
+.not-found-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #475569;
+}
+
+.not-found-button {
+  width: 132px;
+  height: 32px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-image {
+    width: 448px;
+    height: 296px;
+  }
+
+  .not-found-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .not-found-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .not-found-button {
+    width: 164px;
+    height: 48px;
+    border-radius: 12px;
+  }
+}

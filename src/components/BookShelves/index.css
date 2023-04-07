@@ -1,0 +1,260 @@
+* {
+  font-family: 'Roboto';
+}
+
+.bookshelves-mobile-container {
+  background-color: #f5f7fa;
+  padding: 24px;
+}
+
+.bookshelves-desktop-container {
+  display: none;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-input {
+  width: 212px;
+  height: 36px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-right: none;
+  border-radius: 0px 4px 4px 0px;
+  padding-left: 12px;
+  outline: none;
+}
+
+.search-icon-button {
+  width: 52px;
+  height: 36px;
+  background-color: #edeff1;
+  border-radius: 0px 3px 3px 0px;
+  border: 1px solid #cbd5e1;
+  border-left: none;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #94a3b8;
+}
+
+.bookshelf-heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #334155;
+}
+
+.book-page-failure-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-failure-image {
+  width: 238px;
+  height: 118px;
+}
+
+.book-failure-text {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+  text-align: center;
+  line-height: 16px;
+}
+
+.try-again-button {
+  width: 87px;
+  height: 32px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.books-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  border: 1px solid #0284c7;
+  height: 24px;
+  border-radius: 20px;
+  padding: 4px 8px 4px 8px;
+  text-align: center;
+  background-color: transparent;
+  color: #0284c7;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.no-match-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-books-image {
+  width: 257px;
+  height: 176px;
+}
+
+.no-books-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .bookshelves-desktop-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f7fa;
+    padding: 120px 100px 64px 100px;
+  }
+
+  .bookshelves-mobile-container {
+    display: none;
+  }
+
+  .bookshelves-filter-books-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 42px;
+  }
+
+  .all-books-heading {
+    font-size: 18px;
+    color: #334155;
+    line-height: 22px;
+  }
+
+  .search-container {
+    display: flex;
+    padding-left: 350px;
+  }
+
+  .search-input {
+    width: 264px;
+    height: 36px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-right: none;
+    border-radius: 0px 4px 4px 0px;
+    padding-left: 12px;
+  }
+
+  .search-icon-button {
+    width: 52px;
+    height: 36px;
+    background-color: #edeff1;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #cbd5e1;
+    border-left: none;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    color: #94a3b8;
+  }
+
+  .book-page-failure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .book-failure-image {
+    width: 469px;
+    height: 230px;
+  }
+
+  .book-failure-text {
+    font-size: 24px;
+    color: #475569;
+    font-weight: 500;
+    line-height: 48px;
+  }
+
+  .try-again-button {
+    width: 112px;
+    height: 48px;
+    background-color: #0284c7;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  .books-list-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .no-books-image {
+    width: 476px;
+    height: 327px;
+  }
+
+  .no-books-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #334155;
+  }
+
+  .left-navbar-container {
+    background-color: #ffffff;
+    width: 256px;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-navbar-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #334155;
+    padding-left: 30px;
+  }
+
+  .left-navbar-filter-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

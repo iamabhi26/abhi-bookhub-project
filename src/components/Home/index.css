@@ -1,0 +1,207 @@
+* {
+  font-family: 'Roboto';
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  background-color: #f8fafc;
+  width: 100vw;
+}
+
+.home-text-container {
+  padding: 24px;
+}
+
+.question-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  color: #1e293b;
+}
+
+.home-page-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #475569;
+}
+
+.find-books-mobile-button {
+  width: 104px;
+  height: 36px;
+  background-color: #0284c7;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: #f8fafc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.slider-container {
+  width: 100vw;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding: 18px 28px 16px 28px;
+}
+
+.slider-heading-container {
+  display: flex;
+}
+
+.slider-heading {
+  color: #1e293b;
+  font-size: 22px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.find-books-desktop-button {
+  display: none;
+}
+
+.book-slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.books-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.book-thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-thumbnail {
+  width: 146px;
+  height: 110px;
+}
+
+.book-title {
+  color: #334155;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.book-author {
+  color: #475569;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.home-page-failure-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-failure-image {
+  width: 244px;
+  height: 120px;
+}
+
+.home-failure-text {
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.try-again-button {
+  width: 87px;
+  height: 32px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+  .home-text-container {
+    padding: 80px 100px 64px 100px;
+    width: 100vw;
+  }
+
+  .question-text {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .home-page-text {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .find-books-mobile-button {
+    display: none;
+  }
+
+  .slider-container {
+    width: 85vw;
+    height: 440px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 34px 36px 30px 36px;
+    border-radius: 16px;
+  }
+
+  .slider-heading-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .find-books-desktop-button {
+    width: 104px;
+    height: 36px;
+    background-color: #0284c7;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #f8fafc;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .book-thumbnail-container {
+    width: 350px;
+    height: 340px;
+  }
+
+  .book-thumbnail {
+    width: 73%;
+    height: 73%;
+  }
+
+  .book-title {
+    font-size: 18px;
+  }
+
+  .book-author {
+    font-size: 14px;
+  }
+}

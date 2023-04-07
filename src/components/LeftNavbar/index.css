@@ -1,0 +1,21 @@
+* {
+  font-family: 'Roboto';
+}
+
+.filters-list {
+  padding: 10px;
+}
+
+.navbar-filters-button {
+  background-color: transparent;
+  color: #475569;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 150px;
+  text-align: start;
+}
+
+.selected-status {
+  color: #0284c7;
+}

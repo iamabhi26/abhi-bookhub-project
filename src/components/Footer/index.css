@@ -1,0 +1,24 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f7fa;
+}
+
+.footer-icons-container {
+  display: flex;
+}
+
+.footer-icon {
+  width: 21px;
+  height: 21px;
+  margin: 10px;
+  color: #3d3c3c;
+}
+
+.contact-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d3c3c;
+}

@@ -1,3 +1,7 @@
+.link-redirect {
+  text-decoration: none;
+}
+
 .books-list {
   display: flex;
   flex-direction: row;
@@ -43,7 +47,7 @@
   color: #fbbf24;
   margin-left: 5px;
   margin-right: 6px;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .book-rating {
@@ -62,15 +66,10 @@
   color: #0284c7;
 }
 
-.book-button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
 @media screen and (min-width: 768px) {
   .books-list {
     padding-right: 50px;
+    padding-bottom: 20px;
   }
 
   .book-info {

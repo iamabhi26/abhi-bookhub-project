@@ -43,7 +43,7 @@ const booksApiStatus = {
 
 class BookShelves extends Component {
   state = {
-    booksData: {},
+    booksData: [],
     searchText: '',
     booksApi: booksApiStatus.initial,
     bookshelfName: bookshelvesList[0].value,
@@ -110,6 +110,31 @@ class BookShelves extends Component {
     if (event.key === 'Enter') {
       this.searchBook()
     }
+  }
+
+  renderSearchInput = () => {
+    const {searchText} = this.state
+
+    return (
+      <div className="search-container">
+        <input
+          type="search"
+          placeholder="Search"
+          className="search-input"
+          value={searchText}
+          onChange={this.changeInput}
+          onKeyDown={this.keyDown}
+        />
+        <button
+          type="button"
+          className="search-icon-button"
+          testid="searchButton"
+          onClick={this.searchBook}
+        >
+          <BsSearch className="search-icon" />
+        </button>
+      </div>
+    )
   }
 
   renderListOfBooks = () => {
@@ -199,101 +224,33 @@ class BookShelves extends Component {
   }
 
   render() {
-    const {
-      searchText,
-      bookshelfName,
-      activeFilterLabel,
-      activeFilterId,
-    } = this.state
+    const {activeFilterLabel, activeFilterId} = this.state
 
     return (
       <>
         <Header shelves />
-        <div className="bookshelves-mobile-container">
-          <div className="search-container">
-            <input
-              type="search"
-              placeholder="Search"
-              className="search-input"
-              value={searchText}
-              onChange={this.changeInput}
-              onKeyDown={this.keyDown}
-            />
-            <button
-              type="button"
-              className="search-icon-button"
-              testid="searchButton"
-              onClick={this.searchBook}
-            >
-              <BsSearch className="search-icon" />
-            </button>
-          </div>
-          <h1 className="bookshelf-heading">Bookshelves</h1>
-          <ul className="buttons-container">
-            {bookshelvesList.map(eachItem => {
-              const filter =
-                bookshelfName === eachItem.value ? 'active-filter' : ''
-              const filterButtons = () => {
-                this.setState(
-                  {
-                    bookshelfName: eachItem.value,
-                    activeFilterLabel: eachItem.label,
-                  },
-                  this.getBooksData,
-                )
-              }
-              return (
-                <li className="buttons-list" key={eachItem.label}>
-                  <button
-                    type="button"
-                    className={`filter-buttons ${filter}`}
-                    onClick={filterButtons}
-                  >
-                    {eachItem.label}
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
-          <div>{this.renderBooks()}</div>
-        </div>
-        <div className="bookshelves-desktop-container">
-          <div className="left-navbar-container">
-            <h1 className="left-navbar-heading">Bookshelves</h1>
-            <ul className="left-navbar-filter-container">
-              {bookshelvesList.map(eachItem => (
-                <LeftNavbar
-                  filterList={eachItem}
-                  key={eachItem.id}
-                  isActive={eachItem.id === activeFilterId}
-                  getFilteredBooksList={this.getFilteredBooksList}
-                />
-              ))}
-            </ul>
-          </div>
-          <div className="bookshelves-filter-books-container">
-            <div className="header-section">
-              <h1 className="all-books-heading">{activeFilterLabel} Books</h1>
-              <div className="search-container">
-                <input
-                  type="search"
-                  placeholder="Search"
-                  className="search-input"
-                  value={searchText}
-                  onChange={this.changeInput}
-                  onKeyDown={this.keyDown}
-                />
-                <button
-                  type="button"
-                  className="search-icon-button"
-                  testid="searchButton"
-                  onClick={this.searchBook}
-                >
-                  <BsSearch className="search-icon" />
-                </button>
-              </div>
+        <div>
+          <div className="bookshelves-container">
+            <div className="navbar-items">
+              <h1 className="bookshelf-heading">Bookshelves</h1>
+              <ul className="left-navbar-filter-container">
+                {bookshelvesList.map(eachItem => (
+                  <LeftNavbar
+                    filterList={eachItem}
+                    key={eachItem.id}
+                    isActive={eachItem.id === activeFilterId}
+                    getFilteredBooksList={this.getFilteredBooksList}
+                  />
+                ))}
+              </ul>
             </div>
-            <div>{this.renderBooks()}</div>
+            <div className="bookshelves-filter-books-container">
+              <div className="header-section">
+                <h1 className="all-books-heading">{activeFilterLabel} Books</h1>
+                <div>{this.renderSearchInput()}</div>
+              </div>
+              <div>{this.renderBooks()}</div>
+            </div>
           </div>
         </div>
         <Footer />

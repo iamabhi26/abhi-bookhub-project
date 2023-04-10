@@ -14,6 +14,12 @@
   display: none;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .login-website-mobile-logo {
   width: 216px;
   height: 216px;
@@ -23,7 +29,6 @@
 .website-login {
   width: 104px;
   height: 28px;
-  margin-left: 90px;
 }
 
 .input-container {

@@ -52,7 +52,7 @@ class Header extends Component {
             </Link>
           </div>
           <ul className="links-container">
-            <li className={`list-item bookshelves-tab ${activeHome}`}>
+            <li className={`list-item home-tab ${activeHome}`}>
               <Link className="home-link" to="/">
                 Home
               </Link>

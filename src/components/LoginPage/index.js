@@ -53,19 +53,19 @@ class LoginPage extends Component {
       <div className="login-page">
         <img
           src="https://res.cloudinary.com/dwswlczpp/image/upload/v1680243470/loginpage_usduxl.jpg"
-          alt="login website logo"
+          alt="website login"
           className="login-website-logo"
-        />
-        <img
-          src="https://res.cloudinary.com/dwswlczpp/image/upload/v1680247811/loginpagemobile_xyshvk.jpg"
-          alt="login website logo"
-          className="login-website-mobile-logo"
         />
         <div className="login-details">
           <form className="form-container" onSubmit={this.submitForm}>
             <img
-              src="https://res.cloudinary.com/dwswlczpp/image/upload/v1680244101/bookhublogo_azjgxm.jpg"
+              src="https://res.cloudinary.com/dwswlczpp/image/upload/v1680247811/loginpagemobile_xyshvk.jpg"
               alt="website login"
+              className="login-website-mobile-logo"
+            />
+            <img
+              src="https://res.cloudinary.com/dwswlczpp/image/upload/v1680244101/bookhublogo_azjgxm.jpg"
+              alt="login website logo"
               className="website-login"
             />
             <div className="input-container">
